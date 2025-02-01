@@ -1,5 +1,5 @@
 pipeline {
-    agent any  // Run on any available agent
+    agent ubuntu-slave  // Run on any available agent
 
     stages {
         stage('Clone Repository') {
