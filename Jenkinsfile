@@ -1,6 +1,9 @@
 pipeline {
-    agent ubuntu-slave  // Run on any available agent
-
+    agent {
+        node {
+            label 'ubuntu-slave'
+        }
+    }
     stages {
         stage('Clone Repository') {
             steps {
